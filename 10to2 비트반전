@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class change10to2 {
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		int a;
+		String c;
+		a = input.nextInt();
+		c = "";
+		
+		while(a > 0)
+		{
+			if(a % 2 == 0)
+			{
+				c = c + '0';
+			}
+			else if(a % 2 == 1)
+			{
+				c = c + '1';
+			}
+			a = a / 2;
+		}
+		
+		System.out.print(c);
+	}
+}
